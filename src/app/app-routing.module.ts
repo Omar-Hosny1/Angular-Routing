@@ -1,4 +1,3 @@
-import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
 import { ServersComponent } from './servers/servers.component';
@@ -8,7 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NgModule } from '@angular/core';
 import { AuthGuradService } from './auth-gurad.service';
-AuthGuradService;
+
 const appRouters: Routes = [
   { path: '', component: HomeComponent },
   { path: 'users', canActivate: [AuthGuradService], component: UsersComponent },
